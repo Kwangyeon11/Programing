@@ -1,4 +1,8 @@
-// 25. 07. 08
+/*   파일명: Assignment07_11.c
+	 내  용: PA11. 학생이 모두 5명일 때, 학생별 총점을 구하고 중간고사, 기말고사, 팀프로젝트, 출석의 평균점을 구해서 출력하는 프로그램을 작성하시오.
+	 작성자: 주광연
+	 날  짜: 2025.09. 14
+*/
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -12,7 +16,7 @@ void print_grade()
 	for (int i = 0; i < 5; i++)
 	{
 		int sum = 0;
-		printf(" �� �� %3d��:	", i+1);
+		printf(" ÇÐ »ý %3d¹ø:	", i+1);
 		for (int j = 0; j < 4; j++)
 		{
 			printf("%4d", grade[i][j]);
@@ -21,7 +25,7 @@ void print_grade()
 		printf(" ==> %3d\n", sum);
 	}
 	
-	printf(" �׸� ���:   ");
+	printf(" Ç×¸ñº° Æò±Õ:   ");
 	for (int i = 0; i < 4; i++)
 	{
 		double sum_b = 0.0;
@@ -39,3 +43,4 @@ int main()
 	print_grade();
 	return 0;
 }
+
