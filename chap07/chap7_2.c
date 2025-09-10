@@ -1,4 +1,8 @@
-// 25. 07. 07
+/*   파일명: Assignment07_2.c
+	 내  용: PA02. 첫 번째 항의 값과 공차를 입력받아서 배열을 채우고 출력하는 프로그램을 작성하시오.
+	 작성자: 주광연
+	 날  짜: 2025.09. 14
+*/
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -18,7 +22,7 @@ void get_sequence(double first, int cr)
 
 		arr[i-1] = first * num;
 
-		printf("%g ", arr[i - 1]); // �ڵ� ���� (������ ǥ��)	12345.7 �Ǵ� 1.23457e+04
+		printf("%g ", arr[i - 1]); // 자동 선택 (간결한 표현)	12345.7 또는 1.23457e+04
 	}
 }
 
@@ -27,13 +31,13 @@ void print_sequence(void)
 	double first;
 	int cr;
 
-	printf("ù ��° ��? ");
+	printf("첫 번째 항? ");
 	scanf("%lf", &first);
 
-	printf("����? ");
+	printf("공비? ");
 	scanf("%d", &cr);
 
-	printf("������: ");
+	printf("등비수열: ");
 	get_sequence(first, cr);
 }
 
@@ -42,4 +46,5 @@ int main()
 	print_sequence();
 
 	return 0;
+
 }
